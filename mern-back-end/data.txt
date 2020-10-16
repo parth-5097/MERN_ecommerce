@@ -1,0 +1,5 @@
+SignUp:
+    { "firstName": "kaipan", "lastName": "heyhey", "email": "kaipan@hey.gmail.com", "password":"123"}
+
+SignIn:
+    { "email": "kaipan@hey.gmail.com", "password":"123"}
