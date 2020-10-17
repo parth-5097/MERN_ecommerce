@@ -1,8 +1,11 @@
 SignUp:
-    { "firstName": "kaipan", "lastName": "heyhey", "email": "kaipan@hey.gmail.com", "password":"123"}
+    { "firstName": "kaipan", "lastName": "heyhey", "email": "kaipan@hey.gmail.com", "password":"1234567"}
 
 SignIn:
-    { "email": "kaipan@hey.gmail.com", "password":"123"}
+    { "email": "kaipan@hey.gmail.com", "password":"1234567"}
 
 Add Category:
     { "name": "crack", "slug": "deadman" }
+
+Add into existing Category:
+    { "name": "crack", "slug": "deadman", "parentId": "replace `_id` with me" }

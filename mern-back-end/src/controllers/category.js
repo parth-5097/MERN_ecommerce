@@ -5,9 +5,9 @@ const createCategory = (categories, parentId = null) => {
     const categoryList = [];
     let category;
     if (parentId === null) {
-        category = categories.filter(cat => cat.parentId === undefined)
+        category = categories.filter(cat => cat.parentId == undefined); // '===' will not work because it check for type and value and here we want to comapre value
     } else {
-        category = categories.filter(cat => cat.parentId === parentId);
+        category = categories.filter(cat => cat.parentId == parentId);
     }
 
     for (let cat of category) {
@@ -25,7 +25,7 @@ const createCategory = (categories, parentId = null) => {
 exports.addCategory = (req, res) => {
     const categoryObj = {
         name: req.body.name,
-        slug: slugify(req.body.name)
+        slug: slugify(req.body.slug)
     }
 
     if (req.body.parentId) {
