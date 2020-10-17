@@ -3,3 +3,6 @@ SignUp:
 
 SignIn:
     { "email": "kaipan@hey.gmail.com", "password":"123"}
+
+Add Category:
+    { "name": "crack", "slug": "deadman" }
